@@ -10,16 +10,16 @@
 </head>
 
 <body>
-    <!--===== ENCABEZADO =====-->
+    <!--===== HEADER =====-->
     <header class="Navbar">
             <h1 class="logo">The PiriGuikis</h1>
-            <!-- Botón hamburguesa -->
+            <!-- Hamburger Button -->
              <div>
-                <button class="boton-menu" onclick="Desplegar()">≡</button>              
+                <button class="menu-button" onclick="Desplegar()">≡</button>              
              </div>     
-            <!--Acaba Boton hamburguesa-->       
+            <!--Finish Hamburger Button-->       
             <nav class="links" id="links">
-                <div class="lista-nav">
+                <div class="nav-list">
                     <a href="#Events">Events</a>
                     <a href="#About">About</a>
                     <a href="#Galery">Galery</a>
@@ -29,24 +29,24 @@
         </div>
     </header>
     <main>
-        <!--===== PORTADA =====-->
-        <section class="portada">
-            <div class="capa-portada">
+        <!--===== COVER =====-->
+        <section class="cover">
+            <div class="cover-layer">
                 <h2>Rock the Night</h2>
                 <p>Upcoming World Tour 2026</p>
-                <div class="boton-portada">
-                    <a href="#Events" class="boton-estandar">View Events</a>
+                <div class="cover-button">
+                    <a href="#Events" class="standard-button">View Events</a>
                 </div>
             </div>
         </section>
-        <!-- EVENTOS -->
-        <section id="Events" class="seccion-eventos">
-            <div class="contenedor">
-                <h2 class="titulo-seccion">Upcoming Events</h2>
-                <p class="subtitulo-seccion">Catch us live — limited tickets available</p>
-                <!-- Tabla -->
-                <div class="contenedor-tabla">
-                    <table class="tabla-eventos">
+        <!-- EVENTS -->
+        <section id="Events" class="events-section">
+            <div class="container">
+                <h2 class="section-title">Upcoming Events</h2>
+                <p class="section-subtitle">Catch us live — limited tickets available</p>
+                <!-- Table -->
+                <div class="table-container">
+                    <table class="events-table">
                         <thead>
                             <tr>
                                 <th>Date</th>
@@ -60,56 +60,56 @@
                                 <td>15 May 2026</td>
                                 <td>Madrid</td>
                                 <td>Sala Sol</td>
-                                <td><a href="#" class="boton-seccion-eventos">Buy</a></td>
+                                <td><a href="#" class="events-section-button">Buy</a></td>
                             </tr>
                             <tr>
                                 <td>18 May 2026</td>
                                 <td>Barcelona</td>
                                 <td>Razzmatazz</td>
-                                <td><a href="#" class="boton-seccion-eventos">Buy</a></td>
+                                <td><a href="#" class="events-section-button">Buy</a></td>
                             </tr>
                             <tr>
                                 <td>22 May 2026</td>
                                 <td>Valencia</td>
                                 <td>Moon Club</td>
-                                <td><a href="#" class="boton-seccion-eventos">Buy</a></td>
+                                <td><a href="#" class="events-section-button">Buy</a></td>
                             </tr>
                             <tr>
                                 <td>28 May 2026</td>
                                 <td>Bilbao</td>
                                 <td>Kafe Antzokia</td>
-                                <td><a href="#" class="boton-seccion-eventos">Buy</a></td>
+                                <td><a href="#" class="events-section-button">Buy</a></td>
                             </tr>
                             <tr>
                                 <td>03 Jun 2026</td>
                                 <td>Sevilla</td>
                                 <td>Teatro Central</td>
-                                <td><a href="#" class="boton-seccion-eventos">Buy</a></td>
+                                <td><a href="#" class="events-section-button">Buy</a></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         </section>
-        <!--===== SOBRE LA BANDA =====-->
-        <section id="About" class="seccion-sobre-nosotros">
-            <div class="contenedor">
+        <!--===== ABOUT THE BAND =====-->
+        <section id="About" class="about-us-section">
+            <div class="container">
 
-                <div class="contenido-sobre-nosotros">
-                    <div class="imagen-banda">
+                <div class="about-us-content">
+                    <div class="band-image">
                     <img class="about-img" src="./assets/img/img-1.jpg" alt="The PiriGuikis band on stage">
                     </div>
-                    <article class="texto-sobre-nosotros">
-                        <h2 class="titulo-seccion">About the Band</h2>
-                        <p class="subtitulo-seccion">Four souls, one sound</p>                        
+                    <article class="about-us-text">
+                        <h2 class="section-title">About the Band</h2>
+                        <p class="section-subtitle">Four souls, one sound</p>                        
                         <p> The PiriGuikis is a high-energy rock band born in 2018 from the underground venues of
                             Madrid. Known for their explosive live performances and raw, unfiltered sound, they have
                             toured across Spain and Europe, earning a devoted following. </p>
                         <p> Their music draws from decades of guitar-driven rock, fused with a modern intensity that
                             keeps crowds coming back night after night. </p>
-                        <!-- Lista: Influencias -->
+                        <!-- List: Influences -->
                         <h3>Our Influences</h3>
-                        <ul class="lista-influencias">
+                        <ul class="influences-list">
                             <li>Led Zeppelin</li>
                             <li>Black Sabbath</li>
                             <li>Foo Fighters</li>
@@ -117,9 +117,9 @@
                             <li>AC/DC</li>
                             <li>Muse</li>
                         </ul>
-                        <!-- Lista: Valores -->
+                        <!-- List: Values -->
                         <h3>Our Values</h3>
-                        <ul class="lista-valores">
+                        <ul class="values-list">
                             <li>Authenticity above all</li>
                             <li>Music as a shared experience</li>
                             <li>Never compromising the sound</li>
@@ -129,12 +129,12 @@
                 </div>
             </div>
         </section>
-        <!-- GALERÍA -->
-        <section id="galeria" class="seccion-galeria">
-            <div class="contenedor">
-                <h2 class="titulo-seccion">Multimedia</h2>
-                <p class="subtitulo-seccion">Moments from the road</p>
-                <div class="cuadricula-galeria">
+        <!-- GALLERY -->
+        <section id="Galery" class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">Multimedia</h2>
+                <p class="section-subtitle">Moments from the road</p>
+                <div class="gallery-grid">
                     <img src="./assets/img/img-2.jpg" alt="Band performing live">
                     <img src="./assets/img/img-3.jpg" alt="Guitar solo">
                     <img src="./assets/img/img-4.jpg" alt="Drummer in action">
@@ -142,19 +142,19 @@
                     <img src="./assets/img/img-6.jpg" alt="Backstage moment">
                     <img src="./assets/img/img-7.jpg" alt="Band members">
                     <img src="./assets/img/img-8.jpg" alt="Fan encounter">
-                    
+                    <img src="./assets/img/img-9.jpg" alt="Merch booth">
                 </div>
             </div>
         </section>
     </main>
     <!--footer-->
-    <footer id="contacto" class="pie-pagina">
-        <div class="contenedor contenido-footer">
-            <div class="identidad-footer">
-                <p class="logo">The PiriGuikis <span>Riffs</span></p>
+    <footer id="Contact">
+        <div class="footer-content">
+            
+                <p class="logo">The PiriGuikis</p>
                 <p>Madrid, Spain · Est. 2018</p>
             </div>
-            <ul class="redes-sociales">
+            <ul class="social-media">
                 <li><a href="#" aria-label="Instagram">Instagram</a></li>
                 <li><a href="#" aria-label="Spotify">Spotify</a></li>
                 <li><a href="#" aria-label="YouTube">YouTube</a></li>
@@ -166,4 +166,3 @@
 </body>
 
 </html>
-

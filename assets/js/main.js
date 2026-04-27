@@ -1,14 +1,16 @@
 function Desplegar() {
 
-    var menu = document.getElementsByClassName("links")//Variable para traer el menu del html(en este caso se llama links)
-    var boton = document.getElementsByClassName("boton-menu")//Variable para traer el boton del html(en este caso se llama boton-menu)
-    //Si el menu esta activo se muestra la X y si no lo esta se muestra el simbolo de las tres rayas
+    var menu = document.getElementsByClassName("links") // Variable to get the menu from the HTML (called links)
+    var button = document.getElementsByClassName("menu-button") // Variable to get the button from the HTML (called menu-button)
+    
+    // If the menu is active, show the X; otherwise, show the triple bar symbol
     if (menu[0].classList.contains("active")) {
-        boton[0].innerText = "≡";
+        button[0].innerText = "≡";
     }
     else {
-        boton[0].innerText = "X";
+        button[0].innerText = "X";
     }
-    //El metodo toggle se encarga de agregar o quitar la clase active dependiendo de si esta o no esta en el elemento
+    
+    // The toggle method adds or removes the "active" class depending on its current state in the element
     menu[0].classList.toggle("active")
 }

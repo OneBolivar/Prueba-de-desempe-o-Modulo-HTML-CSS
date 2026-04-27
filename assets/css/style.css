@@ -6,20 +6,22 @@
 body {
   font-family: 'Georgia', serif;
   background-color: gray;
-  /*Acaba Header*/
+  /* Header ends */
   /*------------------------------------------------------------*/
-  /*Empieza seccion portada*/
-  /*Aqui se edita la capa de la portada*/
-  /*Aqui se edita el link para ver los eventos*/
-  /*Aqui acaba la seccion de portada*/
+  /* Cover section starts */
+  /* Cover layer editing */
+  /* Link editing for event viewing */
+  /* Cover section ends */
   /*------------------------------------------------------------*/
-  /*Aqui empieza la seccion de eventos*/
-  /*Acaba seccion eventos*/
+  /* Events section starts */
+  /* Events section ends */
   /*------------------------------------------------------------*/
-  /*Empieza seccion sobre nosotros*/
-  /*Acaba seccion sobre nosotros*/
-  /*Empieza seccion de galeria*/
-  /*Acaba seccion galeria*/ }
+  /* About us section starts */
+  /* About us section ends */
+  /* Gallery section starts */
+  /* Gallery section ends */
+  /* Footer starts */
+  /* Footer ends */ }
   body header {
     display: flex;
     justify-content: space-between;
@@ -29,11 +31,11 @@ body {
     gap: 20px;
     background-color: #434a4a;
     padding: 1rem 2rem;
-    /* Espaciado interno */
-    /*Aqui se editan los links de todas las pantallas en general*/
-    /*Aqui se modifica el boton, se coloca display none para que no se vea en pantalla grande*/
-    /*Condicional del media query, si es menor a 597 px entonces se hara la condicion puesta*/
-    /*Aqui se editan los links (propiedades generales del navbar) para pantallas grandes*/
+    /* Internal spacing */
+    /* Link editing for all screens in general */
+    /* Button modification, display none for large screens */
+    /* Media query condition */
+    /* Navbar general properties for large screens */
     background-color: white;
     display: flex;
     align-items: center;
@@ -47,26 +49,26 @@ body {
       margin: 15px; }
       body header a:hover {
         color: black; }
-    body header .boton-menu {
+    body header .menu-button {
       display: none;
       background-color: gray;
       color: white;
       padding: 15px 20px;
       border-radius: 5px;
       transition: background-color 0.3s ease; }
-      body header .boton-menu:hover {
-        background-color: purple; }
+      body header .menu-button:hover {
+        background-color: #d4af37; }
     @media (max-width: 597px), (min-width: 597px) and (max-width: 991.98px) {
-      body header .boton-menu {
+      body header .menu-button {
         display: block; }
       body header nav {
-        /*Propiedades exclusivas para el menu hamburguesa*/
+        /* Exclusive properties for hamburger menu */
         top: 100px;
         right: 20px;
         position: absolute;
         background-color: gray;
         display: none;
-        /*Aqui se activa (o sea propiedades especificas)*/ }
+        /* Active state properties */ }
         body header nav.active {
           display: flex;
           flex-direction: column; }
@@ -81,57 +83,57 @@ body {
       font-size: 1.6rem;
       text-transform: uppercase;
       letter-spacing: 2px; }
-  body .portada {
+  body .cover {
     height: 75vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/img-10.jpg") center/cover;
-    /*Uso el center cover para que la imagen quede en el centro y se recorte a la medida*/
+    /* Using center/cover to center the image and crop it to fit */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white; }
-  body .capa-portada {
+  body .cover-layer {
     max-width: 600px;
     margin-top: 38vh; }
-  body .boton-portada {
+  body .cover-button {
     border-radius: 10px;
     background-color: white; }
-    body .boton-portada a {
+    body .cover-button a {
       color: black;
       padding: 10px 20px;
       transition: background-color 0.3s ease; }
-    body .boton-portada:hover {
+    body .cover-button:hover {
       background-color: gray;
       transition: ease 0.6s; }
-  body .seccion-eventos {
+  body .events-section {
     padding: 5rem 2rem;
-    /* ===tabla=== */ }
-    body .seccion-eventos .titulo-seccion {
+    /* === table === */ }
+    body .events-section .section-title {
       font-family: 'Georgia', serif;
       font-size: 2.2rem;
       text-transform: uppercase;
       margin-bottom: 0.5rem; }
-    body .seccion-eventos .subtitulo-seccion {
+    body .events-section .section-subtitle {
       color: white;
       margin-bottom: 3rem; }
-    body .seccion-eventos .contenedor-tabla {
+    body .events-section .table-container {
       overflow-x: auto;
-      /*Esto sirve para que nos muestre una barrita de desplazamiento */
+      /* Used to show a scrollbar */
       color: white; }
-    body .seccion-eventos .tabla-eventos {
+    body .events-section .events-table {
       width: 100%;
       border-collapse: collapse; }
-    body .seccion-eventos .tabla-eventos th {
+    body .events-section .events-table th {
       text-align: left;
       padding: 1rem;
       background: #1a1a24;
       color: white;
       font-size: 0.8rem;
       text-transform: uppercase; }
-    body .seccion-eventos .tabla-eventos td {
+    body .events-section .events-table td {
       padding: 1.2rem 1rem;
       border-bottom: 1px solid #2a2a38; }
-    body .seccion-eventos .boton-seccion-eventos {
+    body .events-section .events-section-button {
       display: inline-block;
       padding: 0.6rem 1.5rem;
       background: #2a2a38;
@@ -140,53 +142,73 @@ body {
       font-weight: bold;
       text-transform: uppercase;
       border-radius: 2px; }
-      body .seccion-eventos .boton-seccion-eventos:hover {
+      body .events-section .events-section-button:hover {
         background-color: #d4af37;
         transition: background-color 0.6s ease; }
-  body .seccion-sobre-nosotros {
+  body .about-us-section {
     background-color: white;
     padding: 1rem 2rem; }
-    body .seccion-sobre-nosotros .contenido-sobre-nosotros {
+    body .about-us-section .about-us-content {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 4rem; }
-    body .seccion-sobre-nosotros .imagen-banda {
+    body .about-us-section .band-image {
       display: flex;
       justify-content: center;
       align-items: center; }
-      body .seccion-sobre-nosotros .imagen-banda .about-img {
-        width: 35%;
+      body .about-us-section .band-image .about-img {
+        width: 100%;
         height: auto;
         border-radius: 10px;
         border: 2px solid #d4af37; }
-    body .seccion-sobre-nosotros .texto-sobre-nosotros h3 {
+    body .about-us-section .about-us-text h3 {
       color: #d4af37;
       margin: 1.5rem 0 1rem;
       text-transform: uppercase;
       font-size: 1rem; }
-    body .seccion-sobre-nosotros .texto-sobre-nosotros p {
+    body .about-us-section .about-us-text p {
       margin-bottom: 1rem;
       color: #9a9a9a; }
-    body .seccion-sobre-nosotros .lista-influencias,
-    body .seccion-sobre-nosotros .lista-valores {
+    body .about-us-section .influences-list, body .about-us-section .values-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.8rem;
+      gap: 20px;
       margin-bottom: 1rem; }
-    body .seccion-sobre-nosotros .lista-influencias li {
+    body .about-us-section .influences-list li {
       background: #1a1a24;
       padding: 0.4rem 1rem;
       font-size: 0.8rem;
       color: #9a9a9a; }
-  body .cuadricula-galeria {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px; }
-  body .cuadricula-galeria img {
-    height: 250px;
-    width: 100%;
-    object-fit: cover; }
-  body .cuadricula-galeria img:first-child {
-    grid-column: span 2; }
+  body .gallery-section {
+    margin-left: 5px;
+    margin-right: 5px; }
+    body .gallery-section .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin-bottom: 15px; }
+    body .gallery-section .gallery-grid img {
+      height: 250px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px; }
+  body footer {
+    padding: 1rem 2rem;
+    background: white;
+    border-top: 1px solid #2a2a38; }
+    body footer .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    body footer .social-media {
+      display: flex;
+      gap: 1.5rem; }
+    body footer .social-media a {
+      color: #d4af37;
+      font-size: 0.8rem;
+      text-transform: uppercase; }
+      body footer .social-media a:hover {
+        color: black;
+        transition: color 0.6s ease; }
 
 /*# sourceMappingURL=style.css.map */

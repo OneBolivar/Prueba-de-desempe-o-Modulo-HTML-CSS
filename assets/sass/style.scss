@@ -18,8 +18,8 @@ body {
         background-color: #434a4a;
         padding: 1rem 2rem;
 
-        /* Espaciado interno */
-        /*Aqui se editan los links de todas las pantallas en general*/
+        /* Internal spacing */
+        /* Link editing for all screens in general */
         a {
             color: #d4af37;
             text-decoration: none;
@@ -34,8 +34,8 @@ body {
 
         }
 
-        /*Aqui se modifica el boton, se coloca display none para que no se vea en pantalla grande*/
-        .boton-menu {
+        /* Button modification, display none for large screens */
+        .menu-button {
             display: none;
             background-color: gray;
             color: white;
@@ -44,26 +44,26 @@ body {
             transition: background-color 0.3s ease;
 
             &:hover {
-                background-color: purple;
+                background-color: #d4af37;
             }
         }
 
-        /*Condicional del media query, si es menor a 597 px entonces se hara la condicion puesta*/
+        /* Media query condition */
         @media (max-width: 597px),
         (min-width: 597px) and (max-width: 991.98px) {
-            .boton-menu {
+            .menu-button {
                 display: block;
             }
 
             nav {
-                /*Propiedades exclusivas para el menu hamburguesa*/
+                /* Exclusive properties for hamburger menu */
                 top: 100px;
                 right: 20px;
                 position: absolute;
                 background-color: gray;
                 display: none;
 
-                /*Aqui se activa (o sea propiedades especificas)*/
+                /* Active state properties */
                 &.active {
                     display: flex;
                     flex-direction: column;
@@ -80,7 +80,7 @@ body {
 
         }
 
-        /*Aqui se editan los links (propiedades generales del navbar) para pantallas grandes*/
+        /* Navbar general properties for large screens */
         background-color: white;
         display: flex;
         align-items: center;
@@ -95,13 +95,13 @@ body {
         }
     }
 
-    /*Acaba Header*/
+    /* Header ends */
     /*------------------------------------------------------------*/
-    /*Empieza seccion portada*/
-    .portada {
+    /* Cover section starts */
+    .cover {
         height: 75vh;
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/img-10.jpg') center/cover;
-        /*Uso el center cover para que la imagen quede en el centro y se recorte a la medida*/
+        /* Using center/cover to center the image and crop it to fit */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -109,14 +109,14 @@ body {
         color: white;
     }
 
-    /*Aqui se edita la capa de la portada*/
-    .capa-portada {
+    /* Cover layer editing */
+    .cover-layer {
         max-width: 600px;
         margin-top: 38vh;
     }
 
-    /*Aqui se edita el link para ver los eventos*/
-    .boton-portada {
+    /* Link editing for event viewing */
+    .cover-button {
         border-radius: 10px;
         background-color: white;
 
@@ -132,37 +132,37 @@ body {
         }
     }
 
-    /*Aqui acaba la seccion de portada*/
+    /* Cover section ends */
     /*------------------------------------------------------------*/
-    /*Aqui empieza la seccion de eventos*/
-    .seccion-eventos {
+    /* Events section starts */
+    .events-section {
         padding: 5rem 2rem;
 
-        .titulo-seccion {
+        .section-title {
             font-family: 'Georgia', serif;
             font-size: 2.2rem;
             text-transform: uppercase;
             margin-bottom: 0.5rem;
         }
 
-        .subtitulo-seccion {
+        .section-subtitle {
             color: white;
             margin-bottom: 3rem;
         }
 
-        /* ===tabla=== */
-        .contenedor-tabla {
+        /* === table === */
+        .table-container {
             overflow-x: auto;
-            /*Esto sirve para que nos muestre una barrita de desplazamiento */
+            /* Used to show a scrollbar */
             color: white;
         }
 
-        .tabla-eventos {
+        .events-table {
             width: 100%;
             border-collapse: collapse;
         }
 
-        .tabla-eventos th {
+        .events-table th {
             text-align: left;
             padding: 1rem;
             background: #1a1a24;
@@ -171,12 +171,12 @@ body {
             text-transform: uppercase;
         }
 
-        .tabla-eventos td {
+        .events-table td {
             padding: 1.2rem 1rem;
             border-bottom: 1px solid #2a2a38;
         }
 
-        .boton-seccion-eventos {
+        .events-section-button {
             display: inline-block;
             padding: 0.6rem 1.5rem;
             background: #2a2a38;
@@ -193,27 +193,27 @@ body {
         }
     }
 
-    /*Acaba seccion eventos*/
+    /* Events section ends */
     /*------------------------------------------------------------*/
-    /*Empieza seccion sobre nosotros*/
-    .seccion-sobre-nosotros {
+    /* About us section starts */
+    .about-us-section {
         background-color: white;
         padding: 1rem 2rem;
 
-        .contenido-sobre-nosotros {
+        .about-us-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
 
         }
 
-        .imagen-banda {
+        .band-image {
             display: flex;
             justify-content: center;
             align-items: center;
 
             .about-img {
-                width: 35%;
+                width: 100%;
                 height: auto;
                 border-radius: 10px;
                 border: 2px solid #d4af37;
@@ -223,27 +223,26 @@ body {
 
         }
 
-        .texto-sobre-nosotros h3 {
+        .about-us-text h3 {
             color: #d4af37;
             margin: 1.5rem 0 1rem;
             text-transform: uppercase;
             font-size: 1rem;
         }
 
-        .texto-sobre-nosotros p {
+        .about-us-text p {
             margin-bottom: 1rem;
             color: #9a9a9a;
         }
 
-        .lista-influencias,
-        .lista-valores {
+        .influences-list, .values-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.8rem;
+            gap: 20px;
             margin-bottom: 1rem;
         }
 
-        .lista-influencias li {
+        .influences-list li {
             background: #1a1a24;
             padding: 0.4rem 1rem;
             font-size: 0.8rem;
@@ -251,24 +250,59 @@ body {
         }
     }
 
-    /*Acaba seccion sobre nosotros*/
+    /* About us section ends */
 
-    /*Empieza seccion de galeria*/
-    .cuadricula-galeria {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 15px;
+    /* Gallery section starts */
+    .gallery-section{
+        margin-left: 5px;
+        margin-right: 5px;
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 15px;
+            
+
+        }
+
+
+        .gallery-grid img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
     }
 
-    .cuadricula-galeria img {
-        height: 250px;
-        width: 100%;
-        object-fit: cover;
+    /* Gallery section ends */
+    
+    /* Footer starts */
+    footer{
+        padding: 1rem 2rem;
+        background: white;
+        border-top: 1px solid #2a2a38;  
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .social-media {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .social-media a {
+            color: #d4af37;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            &:hover {
+                color: black;
+                transition: color 0.6s ease;
+            }
+        }              
     }
 
-    .cuadricula-galeria img:first-child {
-        grid-column: span 2;
-    }
-
-    /*Acaba seccion galeria*/
+    /* Footer ends */
 }
