@@ -4,43 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shattered Riffs - Rock the Night</title>
+    <title>The PiriGuikis - Rock the Night</title>
     <link rel="shortcut icon" href="./assets/icons/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <!--===== ENCABEZADO =====-->
-    <header class="barra-superior">
-        <div class="contenedor contenido-header">
-            <h1 class="logo">Shattered <span>Riffs</span></h1>
-            <nav class="navegacion" id="navegacion-principal" aria-label="Main navigation">
-                <ul class="lista-nav">
-                    <li><a href="#eventos">Events</a></li>
-                    <li><a href="#sobre-nosotros">About</a></li>
-                    <li><a href="#galeria">Media</a></li>
-                    <li><a href="#contacto">Contact</a></li>
-                </ul>
+    <header class="Navbar">
+            <h1 class="logo">The PiriGuikis</h1>
+            <!-- Botón hamburguesa -->
+             <div>
+                <button class="boton-menu" onclick="Desplegar()">≡</button>              
+             </div>     
+            <!--Acaba Boton hamburguesa-->       
+            <nav class="links" id="links">
+                <div class="lista-nav">
+                    <a href="#Events">Events</a>
+                    <a href="#About">About</a>
+                    <a href="#Galery">Galery</a>
+                    <a href="#Contact">Contact</a>
+                </div>
             </nav>
-            <!-- Botón hamburguesa (móvil) -->
-            <button class="boton-menu" id="alternar-menu" aria-label="Toggle menu">
-                ☰
-            </button>
         </div>
     </header>
     <main>
         <!--===== PORTADA =====-->
-        <section class="portada" aria-label="Hero">
+        <section class="portada">
             <div class="capa-portada">
-                <h2 class="titulo-portada">Rock the Night</h2>
-                <p class="subtitulo-portada">Upcoming World Tour 2026</p>
-                <div class="botones-portada">
-                    <a href="#eventos" class="boton-estandar">View Events</a>
+                <h2>Rock the Night</h2>
+                <p>Upcoming World Tour 2026</p>
+                <div class="boton-portada">
+                    <a href="#Events" class="boton-estandar">View Events</a>
                 </div>
             </div>
         </section>
         <!-- EVENTOS -->
-        <section id="eventos" class="seccion-eventos">
+        <section id="Events" class="seccion-eventos">
             <div class="contenedor">
                 <h2 class="titulo-seccion">Upcoming Events</h2>
                 <p class="subtitulo-seccion">Catch us live — limited tickets available</p>
@@ -60,31 +60,31 @@
                                 <td>15 May 2026</td>
                                 <td>Madrid</td>
                                 <td>Sala Sol</td>
-                                <td><a href="#" class="boton-estandar">Buy</a></td>
+                                <td><a href="#" class="boton-seccion-eventos">Buy</a></td>
                             </tr>
                             <tr>
                                 <td>18 May 2026</td>
                                 <td>Barcelona</td>
                                 <td>Razzmatazz</td>
-                                <td><a href="#" class="boton-estandar">Buy</a></td>
+                                <td><a href="#" class="boton-seccion-eventos">Buy</a></td>
                             </tr>
                             <tr>
                                 <td>22 May 2026</td>
                                 <td>Valencia</td>
                                 <td>Moon Club</td>
-                                <td><a href="#" class="boton-estandar">Buy</a></td>
+                                <td><a href="#" class="boton-seccion-eventos">Buy</a></td>
                             </tr>
                             <tr>
                                 <td>28 May 2026</td>
                                 <td>Bilbao</td>
                                 <td>Kafe Antzokia</td>
-                                <td><a href="#" class="boton-estandar">Buy</a></td>
+                                <td><a href="#" class="boton-seccion-eventos">Buy</a></td>
                             </tr>
                             <tr>
                                 <td>03 Jun 2026</td>
                                 <td>Sevilla</td>
                                 <td>Teatro Central</td>
-                                <td><a href="#" class="boton-estandar">Buy</a></td>
+                                <td><a href="#" class="boton-seccion-eventos">Buy</a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -92,14 +92,17 @@
             </div>
         </section>
         <!--===== SOBRE LA BANDA =====-->
-        <section id="sobre-nosotros" class="seccion-sobre-nosotros">
+        <section id="About" class="seccion-sobre-nosotros">
             <div class="contenedor">
-                <h2 class="titulo-seccion">About the Band</h2>
-                <p class="subtitulo-seccion">Four souls, one sound</p>
+
                 <div class="contenido-sobre-nosotros">
-                    <img class="imagen-banda" src="./assets/img/img-1.jpg" alt="Shattered Riffs band on stage">
+                    <div class="imagen-banda">
+                    <img class="about-img" src="./assets/img/img-1.jpg" alt="The PiriGuikis band on stage">
+                    </div>
                     <article class="texto-sobre-nosotros">
-                        <p> Shattered Riffs is a high-energy rock band born in 2018 from the underground venues of
+                        <h2 class="titulo-seccion">About the Band</h2>
+                        <p class="subtitulo-seccion">Four souls, one sound</p>                        
+                        <p> The PiriGuikis is a high-energy rock band born in 2018 from the underground venues of
                             Madrid. Known for their explosive live performances and raw, unfiltered sound, they have
                             toured across Spain and Europe, earning a devoted following. </p>
                         <p> Their music draws from decades of guitar-driven rock, fused with a modern intensity that
@@ -136,7 +139,10 @@
                     <img src="./assets/img/img-3.jpg" alt="Guitar solo">
                     <img src="./assets/img/img-4.jpg" alt="Drummer in action">
                     <img src="./assets/img/img-5.jpg" alt="Crowd at concert">
+                    <img src="./assets/img/img-6.jpg" alt="Backstage moment">
                     <img src="./assets/img/img-7.jpg" alt="Band members">
+                    <img src="./assets/img/img-8.jpg" alt="Fan encounter">
+                    
                 </div>
             </div>
         </section>
@@ -145,7 +151,7 @@
     <footer id="contacto" class="pie-pagina">
         <div class="contenedor contenido-footer">
             <div class="identidad-footer">
-                <p class="logo">Shattered <span>Riffs</span></p>
+                <p class="logo">The PiriGuikis <span>Riffs</span></p>
                 <p>Madrid, Spain · Est. 2018</p>
             </div>
             <ul class="redes-sociales">
@@ -156,6 +162,7 @@
             </ul>
         </div>
     </footer>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>

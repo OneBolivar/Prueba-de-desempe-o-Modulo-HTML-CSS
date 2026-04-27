@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: gray;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 10px;
+        margin-left: 10px;
+        gap: 20px;
+        background-color: #434a4a;
+        padding: 1rem 2rem;
+
+        /* Espaciado interno */
+        /*Aqui se editan los links de todas las pantallas en general*/
+        a {
+            color: #d4af37;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            margin: 15px;
+
+            &:hover {
+                color: black;
+            }
+
+        }
+
+        /*Aqui se modifica el boton, se coloca display none para que no se vea en pantalla grande*/
+        .boton-menu {
+            display: none;
+            background-color: gray;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: purple;
+            }
+        }
+
+        /*Condicional del media query, si es menor a 597 px entonces se hara la condicion puesta*/
+        @media (max-width: 597px),
+        (min-width: 597px) and (max-width: 991.98px) {
+            .boton-menu {
+                display: block;
+            }
+
+            nav {
+                /*Propiedades exclusivas para el menu hamburguesa*/
+                top: 100px;
+                right: 20px;
+                position: absolute;
+                background-color: gray;
+                display: none;
+
+                /*Aqui se activa (o sea propiedades especificas)*/
+                &.active {
+                    display: flex;
+                    flex-direction: column;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        font-family: sans-serif;
+                        font-weight: 500;
+                        transition: color 0.3s ease;
+                    }
+                }
+            }
+
+        }
+
+        /*Aqui se editan los links (propiedades generales del navbar) para pantallas grandes*/
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            font-family: 'Georgia', serif;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+        }
+    }
+
+    /*Acaba Header*/
+    /*------------------------------------------------------------*/
+    /*Empieza seccion portada*/
+    .portada {
+        height: 75vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/img-10.jpg') center/cover;
+        /*Uso el center cover para que la imagen quede en el centro y se recorte a la medida*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+
+    /*Aqui se edita la capa de la portada*/
+    .capa-portada {
+        max-width: 600px;
+        margin-top: 38vh;
+    }
+
+    /*Aqui se edita el link para ver los eventos*/
+    .boton-portada {
+        border-radius: 10px;
+        background-color: white;
+
+        & a {
+            color: black;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        &:hover {
+            background-color: gray;
+            transition: ease 0.6s;
+        }
+    }
+
+    /*Aqui acaba la seccion de portada*/
+    /*------------------------------------------------------------*/
+    /*Aqui empieza la seccion de eventos*/
+    .seccion-eventos {
+        padding: 5rem 2rem;
+
+        .titulo-seccion {
+            font-family: 'Georgia', serif;
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitulo-seccion {
+            color: white;
+            margin-bottom: 3rem;
+        }
+
+        /* ===tabla=== */
+        .contenedor-tabla {
+            overflow-x: auto;
+            /*Esto sirve para que nos muestre una barrita de desplazamiento */
+            color: white;
+        }
+
+        .tabla-eventos {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .tabla-eventos th {
+            text-align: left;
+            padding: 1rem;
+            background: #1a1a24;
+            color: white;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .tabla-eventos td {
+            padding: 1.2rem 1rem;
+            border-bottom: 1px solid #2a2a38;
+        }
+
+        .boton-seccion-eventos {
+            display: inline-block;
+            padding: 0.6rem 1.5rem;
+            background: #2a2a38;
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 2px;
+
+            &:hover {
+                background-color: #d4af37;
+                transition: background-color 0.6s ease;
+            }
+        }
+    }
+
+    /*Acaba seccion eventos*/
+    /*------------------------------------------------------------*/
+    /*Empieza seccion sobre nosotros*/
+    .seccion-sobre-nosotros {
+        background-color: white;
+        padding: 1rem 2rem;
+
+        .contenido-sobre-nosotros {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+
+        }
+
+        .imagen-banda {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .about-img {
+                width: 35%;
+                height: auto;
+                border-radius: 10px;
+                border: 2px solid #d4af37;
+            }
+
+
+
+        }
+
+        .texto-sobre-nosotros h3 {
+            color: #d4af37;
+            margin: 1.5rem 0 1rem;
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+
+        .texto-sobre-nosotros p {
+            margin-bottom: 1rem;
+            color: #9a9a9a;
+        }
+
+        .lista-influencias,
+        .lista-valores {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .lista-influencias li {
+            background: #1a1a24;
+            padding: 0.4rem 1rem;
+            font-size: 0.8rem;
+            color: #9a9a9a;
+        }
+    }
+
+    /*Acaba seccion sobre nosotros*/
+
+    /*Empieza seccion de galeria*/
+    .cuadricula-galeria {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    .cuadricula-galeria img {
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .cuadricula-galeria img:first-child {
+        grid-column: span 2;
+    }
+
+    /*Acaba seccion galeria*/
+}
