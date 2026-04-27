@@ -169,7 +169,8 @@ body {
     body .about-us-section .about-us-text p {
       margin-bottom: 1rem;
       color: #9a9a9a; }
-    body .about-us-section .influences-list, body .about-us-section .values-list {
+    body .about-us-section .influences-list,
+    body .about-us-section .values-list {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;

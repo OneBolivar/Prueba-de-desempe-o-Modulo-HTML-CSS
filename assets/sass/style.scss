@@ -235,7 +235,8 @@ body {
             color: #9a9a9a;
         }
 
-        .influences-list, .values-list {
+        .influences-list,
+        .values-list {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
@@ -253,15 +254,16 @@ body {
     /* About us section ends */
 
     /* Gallery section starts */
-    .gallery-section{
+    .gallery-section {
         margin-left: 5px;
         margin-right: 5px;
+
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 15px;
             margin-bottom: 15px;
-            
+
 
         }
 
@@ -276,12 +278,13 @@ body {
     }
 
     /* Gallery section ends */
-    
+
     /* Footer starts */
-    footer{
+    footer {
         padding: 1rem 2rem;
         background: white;
-        border-top: 1px solid #2a2a38;  
+        border-top: 1px solid #2a2a38;
+
         .footer-content {
             display: flex;
             justify-content: space-between;
@@ -297,11 +300,12 @@ body {
             color: #d4af37;
             font-size: 0.8rem;
             text-transform: uppercase;
+
             &:hover {
                 color: black;
                 transition: color 0.6s ease;
             }
-        }              
+        }
     }
 
     /* Footer ends */
