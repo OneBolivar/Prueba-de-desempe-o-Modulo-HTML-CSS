@@ -16,9 +16,9 @@ body {
         margin-left: 10px;
         gap: 20px;
         background-color: #434a4a;
-        padding: 1rem 2rem;
+        padding: 1rem 2rem;        /* Internal spacing */
 
-        /* Internal spacing */
+
         /* Link editing for all screens in general */
         a {
             color: #d4af37;
@@ -100,8 +100,7 @@ body {
     /* Cover section starts */
     .cover {
         height: 75vh;
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/img-10.jpg') center/cover;
-        /* Using center/cover to center the image and crop it to fit */
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/img-10.jpg') center/cover;/* Using center/cover to center the image and crop it to fit */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -152,8 +151,6 @@ body {
 
         /* === table === */
         .table-container {
-            overflow-x: auto;
-            /* Used to show a scrollbar */
             color: white;
         }
 
@@ -182,7 +179,7 @@ body {
             background: #2a2a38;
             color: #fff;
             font-size: 0.8rem;
-            font-weight: bold;
+            font-weight: bold; /*Bold text*/
             text-transform: uppercase;
             border-radius: 2px;
 
@@ -295,7 +292,7 @@ body {
             display: flex;
             gap: 1.5rem;
         }
-
+        
         .social-media a {
             color: #d4af37;
             font-size: 0.8rem;

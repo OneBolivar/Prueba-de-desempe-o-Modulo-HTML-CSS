@@ -117,8 +117,6 @@ body {
       color: white;
       margin-bottom: 3rem; }
     body .events-section .table-container {
-      overflow-x: auto;
-      /* Used to show a scrollbar */
       color: white; }
     body .events-section .events-table {
       width: 100%;
@@ -140,6 +138,7 @@ body {
       color: #fff;
       font-size: 0.8rem;
       font-weight: bold;
+      /*Bold text*/
       text-transform: uppercase;
       border-radius: 2px; }
       body .events-section .events-section-button:hover {
